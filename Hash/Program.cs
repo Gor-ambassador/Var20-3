@@ -371,7 +371,7 @@ namespace Hash
                 Console.WriteLine($"BadHash, {infos.Count} elements, {infosBad.Count - infosBadLook.Count} collisions \n \n");
             };
 
-            using (var db = new DataContext300000())
+         /*   using (var db = new DataContext300000())
             {
                 List<BaseInfo> infos = db.Info.ToList();
                 List<InfoGood> infosGood = infos.Select(x => new InfoGood(x)).ToList();
@@ -409,6 +409,7 @@ namespace Hash
                 Console.WriteLine($"GoodHash, {infos.Count} elements, {infosGood.Count - infosGoodLook.Count} collisions");
                 Console.WriteLine($"BadHash, {infos.Count} elements, {infosBad.Count - infosBadLook.Count} collisions \n \n");
             };
+        */
         }
     }
 }
